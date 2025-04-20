@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/josedev/Escritorio/proyectos/nextjs_curso/nextjs-dashboard/app/dashboard/loading.tsx"],"sourcesContent":["import DashboardSkeleton from '@/app/ui/skeletons';\n\nexport default function Loading() {\n    return <div>Loading...</div>;\n  }"],"names":[],"mappings":";;;;;AAEe,SAAS;IACpB,qBAAO,6WAAC;kBAAI;;;;;;AACd"}},
+    {"offset": {"line": 21, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
