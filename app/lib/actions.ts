@@ -117,7 +117,15 @@ export async function authenticate(
     formData: FormData,
   ) {
     try {
-      await signIn('credentials', formData);
+        const callbackUrl = formData.get('redirectTo')?.toString() || '/dashboard';
+        await signIn('credentials', {
+            redirect: false,
+            callbackUrl,
+            email: formData.get('email'),
+            password: formData.get('password'),
+        });
+  
+      redirect(callbackUrl); // redirigimos manualmente desde el server action
     } catch (error) {
       if (error instanceof AuthError) {
         switch (error.type) {
