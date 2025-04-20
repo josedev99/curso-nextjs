@@ -11,6 +11,7 @@ import {
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 import { useActionState } from 'react';
+import { State } from '@/app/lib/actions';
 
 export default function EditInvoiceForm({
   invoice,
