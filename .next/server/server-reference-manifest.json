@@ -1,1 +1,17 @@
-{"node":{"00a1047a31ac040e1fbec0a6b018c081ff243dee27":{"workers":{"app/dashboard/customers/page":{"moduleId":"71580","async":false},"app/dashboard/invoices/[id]/edit/page":{"moduleId":"71580","async":false},"app/dashboard/invoices/create/page":{"moduleId":"71580","async":false},"app/dashboard/(overview)/page":{"moduleId":"71580","async":false},"app/dashboard/invoices/page":{"moduleId":"35140","async":false}},"layer":{"app/dashboard/customers/page":"rsc","app/dashboard/invoices/[id]/edit/page":"rsc","app/dashboard/invoices/create/page":"rsc","app/dashboard/(overview)/page":"rsc","app/dashboard/invoices/page":"rsc"}},"4093731822d1b49b00052b183366a4aa2967174ed9":{"workers":{"app/dashboard/invoices/page":{"moduleId":"35140","async":false},"app/login/page":{"moduleId":"25385","async":false},"app/dashboard/invoices/[id]/edit/page":{"moduleId":"25385","async":false},"app/dashboard/invoices/create/page":{"moduleId":"25385","async":false}},"layer":{"app/dashboard/invoices/page":"rsc","app/login/page":"action-browser","app/dashboard/invoices/[id]/edit/page":"action-browser","app/dashboard/invoices/create/page":"action-browser"}},"609bea835c224166abadf7cdc05af5fd4a2d639a9f":{"workers":{"app/dashboard/invoices/page":{"moduleId":"35140","async":false},"app/login/page":{"moduleId":"25385","async":false},"app/dashboard/invoices/[id]/edit/page":{"moduleId":"25385","async":false},"app/dashboard/invoices/create/page":{"moduleId":"25385","async":false}},"layer":{"app/dashboard/invoices/page":"rsc","app/login/page":"action-browser","app/dashboard/invoices/[id]/edit/page":"action-browser","app/dashboard/invoices/create/page":"action-browser"}},"60aa9ec861e5eef243a76266ca11aa24dd19a85271":{"workers":{"app/dashboard/invoices/page":{"moduleId":"35140","async":false},"app/login/page":{"moduleId":"25385","async":false},"app/dashboard/invoices/[id]/edit/page":{"moduleId":"25385","async":false},"app/dashboard/invoices/create/page":{"moduleId":"25385","async":false}},"layer":{"app/dashboard/invoices/page":"rsc","app/login/page":"action-browser","app/dashboard/invoices/[id]/edit/page":"action-browser","app/dashboard/invoices/create/page":"action-browser"}},"70bd054b5107f3b0d4fd96e2694bef74d421ed5668":{"workers":{"app/dashboard/invoices/page":{"moduleId":"35140","async":false},"app/login/page":{"moduleId":"25385","async":false},"app/dashboard/invoices/[id]/edit/page":{"moduleId":"25385","async":false},"app/dashboard/invoices/create/page":{"moduleId":"25385","async":false}},"layer":{"app/dashboard/invoices/page":"rsc","app/login/page":"action-browser","app/dashboard/invoices/[id]/edit/page":"action-browser","app/dashboard/invoices/create/page":"action-browser"}}},"edge":{},"encryptionKey":"myU5clNJdy5Qbo1aj80HIY5ckbJLNT9wNgjzpFfm5eQ="}
+{
+  "node": {
+    "601938614a9ff10f1109249b24da5b8aeea7408ed3": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/login/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "myU5clNJdy5Qbo1aj80HIY5ckbJLNT9wNgjzpFfm5eQ="
+}

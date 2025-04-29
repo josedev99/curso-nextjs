@@ -1,20 +1,5 @@
 {
   "pages": {
-    "/login/page": [
-      "static/chunks/[root-of-the-server]__81e4402d._.css",
-      "static/chunks/671e2_next_dist_36241080._.js",
-      "static/chunks/app_layout_tsx_59518d15._.js",
-      "static/chunks/[root-of-the-server]__8332751b._.js",
-      "static/chunks/app_login_page_tsx_e04f1e08._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_2176bc7f._.js",
-      "static/chunks/671e2_next_dist_compiled_react-dom-experimental_fd669387._.js",
-      "static/chunks/671e2_next_dist_compiled_d4b70ab2._.js",
-      "static/chunks/671e2_next_dist_client_b1c7a878._.js",
-      "static/chunks/671e2_next_dist_816bfb78._.js",
-      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
-      "static/chunks/_e69f0d32._.js",
-      "static/chunks/_095b61f3._.js"
-    ],
     "/page": [
       "static/chunks/[root-of-the-server]__81e4402d._.css",
       "static/chunks/671e2_next_dist_36241080._.js",
