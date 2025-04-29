@@ -29,19 +29,16 @@ const authConfig = {
         signIn: '/login'
     },
     callbacks: {
-        authorized ({ auth, request }) {
-            const { nextUrl } = request;
+        authorized ({ auth, request: { nextUrl } }) {
             const isLoggedIn = !!auth?.user;
             const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
             if (isOnDashboard) {
-                // Solo usuarios logueados pueden acceder a /dashboard
-                return isLoggedIn;
-            }
-            if (isLoggedIn && (nextUrl.pathname === '/' || nextUrl.pathname === '/login')) {
-                // Si el usuario está logueado y va a la raíz o a login, redirigir al dashboard
+                if (isLoggedIn) return true;
+                return false; // Redirect unauthenticated users to login page
+            } else if (isLoggedIn) {
                 return Response.redirect(new URL('/dashboard', nextUrl));
             }
-            return true; // Permitir otras rutas
+            return true;
         }
     },
     providers: []

@@ -111,7 +111,6 @@ export async function deleteInvoice(id: string) {
     revalidatePath('/dashboard/invoices');
     throw new Error('Failed to Delete Invoice');
 }
-
 export async function authenticate(
     prevState: string | undefined,
     formData: FormData,
@@ -119,9 +118,8 @@ export async function authenticate(
     try {
         await signIn('credentials', formData);
     } catch (error) {
-        if (error && typeof error === 'object' && 'code' in error) {
-            const code = (error as { code: string }).code;
-            switch (code) {
+        if (error instanceof AuthError) {
+            switch (error.type) {
                 case 'CredentialsSignin':
                     return 'Invalid credentials.';
                 default:
