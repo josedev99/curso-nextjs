@@ -119,8 +119,9 @@ export async function authenticate(
     try {
         await signIn('credentials', formData);
     } catch (error) {
-        if (error instanceof AuthError) {
-            switch (error.type) {
+        if (error && typeof error === 'object' && 'code' in error) {
+            const code = (error as { code: string }).code;
+            switch (code) {
                 case 'CredentialsSignin':
                     return 'Invalid credentials.';
                 default:
