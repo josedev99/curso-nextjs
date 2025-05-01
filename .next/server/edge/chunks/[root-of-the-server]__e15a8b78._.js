@@ -37,7 +37,7 @@ const authConfig = {
                 return false;
             } else if (isLoggedIn) {
                 // Redirige usando URL absoluta basada en `request.url`
-                return Response.redirect(new URL('/dashboard', request.url));
+                return Response.redirect(new URL('/dashboard', request.nextUrl.origin));
             }
             return true;
         }
